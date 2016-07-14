@@ -1,3 +1,4 @@
+#Exemplo Python 3.x
 import http.client
 
 conn = http.client.HTTPConnection("186.249.34.34")

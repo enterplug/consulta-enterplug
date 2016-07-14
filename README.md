@@ -1,2 +1,2 @@
-# consulta-enterplug-delphi
-Exemplo Delphi para consumo da API restful
+# consulta-enterplug
+Exemplos para consumo da API restful

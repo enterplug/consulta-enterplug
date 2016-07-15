@@ -11,8 +11,6 @@ func main() {
 
 	url := "http://186.249.34.34/consulta/?email=henrique%40enterplug.com.br&senha=enterplug&codigoProduto=4&tipoConsumidor=F&documentoConsumidor=42924057191"
 
-	payload := strings.NewReader("-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"username\"\r\n\r\ntom\r\n-----011000010111000001101001--")
-
 	req, _ := http.NewRequest("GET", url, payload)
 
 	req.Header.Add("content-type", "multipart/form-data; boundary=---011000010111000001101001")

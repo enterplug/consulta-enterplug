@@ -9,7 +9,7 @@ import (
 
 func main() {
 
-	url := "http://186.249.34.34/consulta/?email=henrique%40enterplug.com.br&senha=enterplug&codigoProduto=4&tipoConsumidor=F&documentoConsumidor=42924057191"
+	url := "http://186.249.34.34/consulta/?email=consulta%40enterplug.com.br&senha=consulta&codigoProduto=4&tipoConsumidor=F&documentoConsumidor=42924057191"
 
 	req, _ := http.NewRequest("GET", url, payload)
 

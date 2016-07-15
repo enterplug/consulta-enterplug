@@ -9,7 +9,7 @@ xhr.addEventListener("readystatechange", function () {
   }
 });
 
-xhr.open("GET", "http://186.249.34.34/consulta/?email=henrique%40enterplug.com.br&senha=enterplug&codigoProduto=4&tipoConsumidor=F&documentoConsumidor=42924057191");
+xhr.open("GET", "http://186.249.34.34/consulta/?email=consulta%40enterplug.com.br&senha=consulta&codigoProduto=4&tipoConsumidor=F&documentoConsumidor=42924057191");
 xhr.setRequestHeader("authorization", "Basic ZW50ZXJwbHVnOnBsdWdlbnRlcg==");
 xhr.setRequestHeader("cache-control", "no-cache");
 

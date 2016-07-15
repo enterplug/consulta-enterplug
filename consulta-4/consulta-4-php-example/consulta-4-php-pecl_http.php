@@ -10,8 +10,8 @@ $request->setRequestMethod('GET');
 $request->setBody($body);
 
 $request->setQuery(new http\QueryString(array(
-  'email' => 'henrique@enterplug.com.br',
-  'senha' => 'enterplug',
+  'email' => 'consulta@enterplug.com.br',
+  'senha' => 'consulta',
   'codigoProduto' => '4',
   'tipoConsumidor' => 'F',
   'documentoConsumidor' => '42924057191'

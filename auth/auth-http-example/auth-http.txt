@@ -1,0 +1,9 @@
+POST /auth HTTP/1.1
+Host: 186.249.34.34
+Content-Type: application/json
+Cache-Control: no-cache
+
+{
+    "email": "consulta@enterplug.com.br",
+    "password": "consulta"
+}

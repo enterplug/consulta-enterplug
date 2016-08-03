@@ -1,7 +1,7 @@
 require 'uri'
 require 'net/http'
 
-url = URI("http://127.0.0.1:8080/auth")
+url = URI("http://186.249.34.34/auth")
 
 http = Net::HTTP.new(url.host, url.port)
 

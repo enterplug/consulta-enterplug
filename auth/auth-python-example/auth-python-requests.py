@@ -1,6 +1,6 @@
 import requests
 
-url = "http://127.0.0.1:8080/auth"
+url = "http://186.249.34.34/auth"
 
 payload = "{\n    \"email\": \"consulta@enterplug.com.br\",\n    \"password\": \"consulta\"\n}"
 headers = {

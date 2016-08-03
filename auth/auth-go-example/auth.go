@@ -9,9 +9,9 @@ import (
 
 func main() {
 
-	url := "http://186.249.34.34/api/consulta/"
+	url := "http://186.249.34.34/auth"
 
-	payload := strings.NewReader("{\n        \"email\": \"consulta@enterplug.com.br\",\n        \"password\": \"consulta\"\n}")
+	payload := strings.NewReader("{\n    \"email\": \"consulta@enterplug.com.br\",\n    \"password\": \"consulta\"\n}")
 
 	req, _ := http.NewRequest("POST", url, payload)
 

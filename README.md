@@ -15,7 +15,7 @@ Para efetuar autenticação na API REST de consulta é obrigatório o desenvolve
 de segurança, o token é indexado no cabeçalho da requisição não obrigando o desenvolvedor autenticar o usuário toda vez que
 for efetuar uma nova consulta, o token pode ser armazenado aonde o desenvolvedor achar melhor exemplos: Cookie, localStorage, Session, Banco de dados etc...
 
-Segue o **[manual](https://github.com/enterplug/consulta-enterplug/blob/master/auth/autenticacao.pdf) e os exemplos de autenticação em diversas linguagens de programação:
+Segue o **[manual](https://github.com/enterplug/consulta-enterplug/blob/master/auth/autenticacao.pdf)** e os exemplos de autenticação em diversas linguagens de programação:
 
 * **[C](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-c-example/auth-c-libcurl.c)**
 * **[C#](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-csharp-example/auth-csharp-restsharp.cs)**
@@ -44,15 +44,20 @@ Segue o **[manual](https://github.com/enterplug/consulta-enterplug/blob/master/a
 
 Caso você seja um desenvolvedor em uma linguagem que não está listada nos exemplos acima de autenticação, crie uma nova issue no repositório que será analisado e gerado um exemplo com a linguagem de sua preferência. :]
 
-## Consulta Cheque(4)
+## Consultas
+
+* Cheque(4)
+* Confirma Pessoa Física(11)
+* Cheque Plus(128)
+
+### Cheque(4)
 Ao efetuar a consulta Cheque(4) o usuário irá obter as seguintes informações através da API REST:
 
 * Dados cadastrais
 * Alerta de documentos
 * CCF(Cadastro de Emitentes de Cheques sem Fundos)
 
-
-### Parametros de entrada
+#### Parâmetros de entrada
 * codigoProduto - Campo obrigatório
 * tipoConsumidor - Campo obrigatório
 * documentoConsumidor - Campo obrigatório
@@ -60,7 +65,10 @@ Ao efetuar a consulta Cheque(4) o usuário irá obter as seguintes informações
 * cepOrigem - Campo não obrigatório
 * codigoEstacaoConsultante - Campo não obrigatório
 
-### Exemplo de parametros de entrada
+#### Insumo Opcional
+Essa consulta não tem opção de insumo opcional.
+
+#### Exemplo de parâmetros de entrada
 ``` js
 {
     "codigoProduto": "4",

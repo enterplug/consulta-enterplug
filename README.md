@@ -2,7 +2,7 @@
   <img src="http://enterplug.com.br/wp-content/uploads/2013/06/logo-Enter2.jpg">
 </p>
 
-<h1 align="center">Enter&Plug Consulta</h1>
+<h1 align="center">Consulta</h1>
 
 <p align="center">
   Repositório de códigos fontes, exemplos e manuais da API REST Enter&Plug Consulta.
@@ -18,9 +18,11 @@ for efetuar uma nova consulta, o token pode ser armazenado aonde o desenvolvedor
 Abaixo segue os exemplos de autenticação em diversas linguagens de programação:
 
 * **[C](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-c-example/auth-c-libcurl.c)**
-* Python
+* **[C#](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-csharp-example/auth-csharp-restsharp.cs)**
+  * **[RestSharp](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-csharp-example/auth-csharp-restsharp.cs)**
+* **[Python](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-python-example/)**
+  * **[Http.Client]()
 * Java
-* C# (Csharp)
 * Javascript
   * Node
   * XHR

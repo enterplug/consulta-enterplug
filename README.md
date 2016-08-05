@@ -21,9 +21,12 @@ Abaixo segue os exemplos de autenticação em diversas linguagens de programaç�
 * **[C#](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-csharp-example/auth-csharp-restsharp.cs)**
   * **[RestSharp](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-csharp-example/auth-csharp-restsharp.cs)**
 * **[Python](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-python-example/)**
-  * **[Http.Client]()
-* Java
-* Javascript
+  * **[Http.Client](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-python-example/auth-python-httpclient.py)**
+  * **[Requests](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-python-example/auth-python-requests.py)**
+* **[Java](https://github.com/enterplug/consulta-enterplug/tree/master/auth/auth-java-example)**
+  **[OKHttp](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-java-example/auth-java-okhttp.java)**
+  **[Unirest](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-java-example/auth-java-unirest.java)**
+* **[Javascript](https://github.com/enterplug/consulta-enterplug/tree/master/auth/auth-javascript-example)**
   * Node
   * XHR
   * JQuery

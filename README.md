@@ -43,3 +43,31 @@ Segue o **[manual](https://github.com/enterplug/consulta-enterplug/blob/master/a
   * **[wget](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-shellscript-example/auth-shellscript-wget.sh)**
 
 Caso você seja um desenvolvedor em uma linguagem que não está listada nos exemplos acima de autenticação, crie uma nova issue no repositório que será analisado e gerado um exemplo com a linguagem de sua preferência. :]
+
+## Consulta Cheque(4)
+Ao efetuar a consulta Cheque(4) o usuário irá obter as seguintes informações através da API REST:
+
+* Dados cadastrais
+* Alerta de documentos
+* CCF(Cadastro de Emitentes de Cheques sem Fundos)
+
+
+### Parametros de entrada
+* codigoProduto - Campo obrigatório
+* tipoConsumidor - Campo obrigatório
+* documentoConsumidor - Campo obrigatório
+* cepConsumidor - Campo não obrigatório
+* cepOrigem - Campo não obrigatório
+* codigoEstacaoConsultante - Campo não obrigatório
+
+### Exemplo de parametros de entrada
+``` js
+{
+    "codigoProduto": "4",
+    "tipoConsumidor": "F",
+    "documentoConsumidor": "42924057191",
+    "cepConsumidor": "14401-360",
+    "cepOrigem": "14401-360",
+    "codigoEstacaoConsultante": "123"
+}
+```

@@ -20,6 +20,8 @@ Segue o **[manual](https://github.com/enterplug/consulta-enterplug/blob/master/a
 * **[C](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-c-example/auth-c-libcurl.c)**
 * **[C#](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-csharp-example/auth-csharp-restsharp.cs)**
   * **[RestSharp](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-csharp-example/auth-csharp-restsharp.cs)**
+* **[Object Pascal]()**
+  * **[Delphi]()**
 * **[GO](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-go-example/auth.go)**
 * **[Java](https://github.com/enterplug/consulta-enterplug/tree/master/auth/auth-java-example)**
   * **[OKHttp](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-java-example/auth-java-okhttp.java)**

@@ -24,8 +24,8 @@ Segue o **[manual](https://github.com/enterplug/consulta-enterplug/blob/master/a
   * **[Http.Client](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-python-example/auth-python-httpclient.py)**
   * **[Requests](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-python-example/auth-python-requests.py)**
 * **[Java](https://github.com/enterplug/consulta-enterplug/tree/master/auth/auth-java-example)**
-  **[OKHttp](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-java-example/auth-java-okhttp.java)**
-  **[Unirest](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-java-example/auth-java-unirest.java)**
+  * **[OKHttp](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-java-example/auth-java-okhttp.java)**
+  * **[Unirest](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-java-example/auth-java-unirest.java)**
 * **[Javascript](https://github.com/enterplug/consulta-enterplug/tree/master/auth/auth-javascript-example)**
   * **[Node](https://github.com/enterplug/consulta-enterplug/tree/master/auth/auth-javascript-example/auth-node-example)**
     * **[Native](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-javascript-example/auth-node-example/auth-node-native.js)**
@@ -35,6 +35,9 @@ Segue o **[manual](https://github.com/enterplug/consulta-enterplug/blob/master/a
   * **[JQuery](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-javascript-example/auth-jquery-example/auth-jquery.js)**
 * **[Ruby](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-ruby-example/auth-ruby-nethttp.rb)**
 * **[GO](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-go-example/auth.go)**
-* **[Shell Script]()**
+* **[Shell Script](https://github.com/enterplug/consulta-enterplug/tree/master/auth/auth-shellscript-example)**
+  * **[cURL](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-shellscript-example/auth-shellscript-curl.sh)**
+  * **[Httpie](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-shellscript-example/auth-shellscript-httpie.sh)**
+  * **[wget](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-shellscript-example/auth-shellscript-wget.sh)**
 
 Caso você seja um desenvolvedor em uma linguagem que não está listada nos exemplos acima de autenticação, crie uma nova issue no repositório que será analisado e gerado um exemplo com a linguagem de sua preferência. :]

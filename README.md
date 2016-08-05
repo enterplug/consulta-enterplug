@@ -15,7 +15,7 @@ Para efetuar autenticação na API REST de consulta é obrigatório o desenvolve
 de segurança, o token é indexado no cabeçalho da requisição não obrigando o desenvolvedor autenticar o usuário toda vez que
 for efetuar uma nova consulta, o token pode ser armazenado aonde o desenvolvedor achar melhor exemplos: Cookie, localStorage, Session, Banco de dados etc...
 
-Abaixo segue os exemplos de autenticação em diversas linguagens de programação:
+Segue o **[manual](https://github.com/enterplug/consulta-enterplug/blob/master/auth/autenticacao.pdf) e os exemplos de autenticação em diversas linguagens de programação:
 
 * **[C](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-c-example/auth-c-libcurl.c)**
 * **[C#](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-csharp-example/auth-csharp-restsharp.cs)**
@@ -27,12 +27,14 @@ Abaixo segue os exemplos de autenticação em diversas linguagens de programaç�
   **[OKHttp](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-java-example/auth-java-okhttp.java)**
   **[Unirest](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-java-example/auth-java-unirest.java)**
 * **[Javascript](https://github.com/enterplug/consulta-enterplug/tree/master/auth/auth-javascript-example)**
-  * Node
-  * XHR
-  * JQuery
-* Ruby
-* GO
-* Shell Script
-
+  * **[Node](https://github.com/enterplug/consulta-enterplug/tree/master/auth/auth-javascript-example/auth-node-example)**
+    * **[Native](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-javascript-example/auth-node-example/auth-node-native.js)**
+    * **[Request](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-javascript-example/auth-node-example/auth-node-request.js)**
+    * **[Unirest](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-javascript-example/auth-node-example/auth-node-unirest.js)**
+  * **[XHR](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-javascript-example/auth-xhr-example/auth-xhr.js)**
+  * **[JQuery](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-javascript-example/auth-jquery-example/auth-jquery.js)**
+* **[Ruby](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-ruby-example/auth-ruby-nethttp.rb)**
+* **[GO](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-go-example/auth.go)**
+* **[Shell Script]()**
 
 Caso você seja um desenvolvedor em uma linguagem que não está listada nos exemplos acima de autenticação, crie uma nova issue no repositório que será analisado e gerado um exemplo com a linguagem de sua preferência. :]

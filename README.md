@@ -11,10 +11,9 @@
 
 ## Sumário
 
-1. - Autenticação
-1.1. - Exemplo de autenticação HTTP
-1.2. - Exemplo de retorno da autenticação
-1.3. - Exemplo de autenticação em diversas linguagens de programação
+1. - **[Autenticação](https://github.com/enterplug/consulta-enterplug#autenticação)**
+2. - **[Consulta Cheque(4)](https://github.com/enterplug/consulta-enterplug#cheque4)**
+3. - **[Consulta Cheque Plus(13)]()**
 
 
 ## Autenticação

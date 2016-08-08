@@ -15,6 +15,22 @@ Para efetuar autenticação na API REST de consulta é obrigatório o desenvolve
 de segurança, o token é indexado no cabeçalho da requisição não obrigando o desenvolvedor autenticar o usuário toda vez que
 for efetuar uma nova consulta, o token pode ser armazenado aonde o desenvolvedor achar melhor exemplos: Cookie, localStorage, Session, Banco de dados etc...
 
+### Exemplo de autenticação HTTP
+
+```
+POST /auth HTTP/1.1
+Host: 186.249.34.34
+Content-Type: application/json
+Cache-Control: no-cache
+
+{
+    "email": "consulta@enterplug.com.br",
+    "password": "consulta"
+}
+```
+
+
+
 Segue o **[manual](https://github.com/enterplug/consulta-enterplug/blob/master/auth/autenticacao.pdf)** e os exemplos de autenticação em diversas linguagens de programação:
 
 * **[C](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-c-example/auth-c-libcurl.c)**

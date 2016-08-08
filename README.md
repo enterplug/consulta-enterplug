@@ -9,13 +9,21 @@
 </p>
 
 
+## Sumário
+
+1. - Autenticação
+1.1. - Exemplo de autenticação HTTP
+1.2. - Exemplo de retorno da autenticação
+1.3. - Exemplo de autenticação em diversas linguagens de programação
+
+
 ## Autenticação
 
-Para efetuar autenticação na API REST de consulta é obrigatório o desenvolvedor informar o usuário e senha para a geração do token
+Para efetuar autenticação na API REST de consulta é obrigatório o desenvolvedor informar o email e password para a geração do token
 de segurança, o token é indexado no cabeçalho da requisição não obrigando o desenvolvedor autenticar o usuário toda vez que
 for efetuar uma nova consulta, o token pode ser armazenado aonde o desenvolvedor achar melhor exemplos: Cookie, localStorage, Session, Banco de dados etc...
 
-### Exemplo de autenticação HTTP
+### Exemplo de autenticação **[HTTP](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-http-example/auth-http.txt)**
 
 ```
 POST /auth HTTP/1.1
@@ -29,7 +37,14 @@ Cache-Control: no-cache
 }
 ```
 
+### Exemplo de retorno da autenticação
+``` js
+{
+  "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjb25zdWx0YUBlbnRlcnBsdWcuY29tLmJyIiwiZXhwIjoxNDcwNzQ2NjUxfQ.rHGdEo3BVzWiLkJe9CRr8z2zokVmJjgNc85eGr5lHP8MI3oRjD9gC7ZM0_qMaH2s3Btq5XotXYNLffo5BnLo9Q"
+}
+```
 
+### Exemplo de autenticação em diversas linguagens de programação
 
 Segue o **[manual](https://github.com/enterplug/consulta-enterplug/blob/master/auth/autenticacao.pdf)** e os exemplos de autenticação em diversas linguagens de programação:
 
@@ -58,12 +73,13 @@ Segue o **[manual](https://github.com/enterplug/consulta-enterplug/blob/master/a
   * **[Httpie](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-shellscript-example/auth-shellscript-httpie.sh)**
   * **[wget](https://github.com/enterplug/consulta-enterplug/blob/master/auth/auth-shellscript-example/auth-shellscript-wget.sh)**
 
-Caso você seja um desenvolvedor em uma linguagem que não está listada nos exemplos acima de autenticação, crie uma nova issue no repositório que será analisado e gerado um exemplo com a linguagem de sua preferência. :]
+Caso você seja um desenvolvedor em uma linguagem que não está listada nos exemplos acima de autenticação, crie uma nova issue no repositório que será analisado e gerado um exemplo com a linguagem de sua preferência, caso tenha implementado em uma linguagem não listada acima  :]
 
 ## Consultas
 
 * Cheque(4)
 * Confirma Pessoa Física(11)
+*
 * Cheque Plus(128)
 
 ### Cheque(4)

@@ -43,6 +43,19 @@ Cache-Control: no-cache
 }
 ```
 
+### Exemplo de inserção do header de autorização
+
+É obrigatório em toda consulta efetuada informar o header Authorization na requisição contendo o Bearer e o token gerado através da autenticação do usuário, caso a requisição não contenha o header será gerado uma exceção de Token inválido ou inexistente.
+
+Segue o exemplo abaixo:
+
+``` js
+{
+  "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJoZW5yaXF1ZUBlbnRlcnBsdWcuY29tLmJyIiwiZXhwIjoxNDcwMzIxNDQ4fQ.b6Qsb9jl3mkO7pMKDiy_A4fLkVQcK_YGEOZgzP8pMi38K0zxXtpOvRBKpujoO0iHXquVpoKS98kcvd5GJGloeA"
+}
+```
+
+
 ### Exemplo de autenticação em diversas linguagens de programação
 
 Segue o **[manual](https://github.com/enterplug/consulta-enterplug/blob/master/auth/autenticacao.pdf)** e os exemplos de autenticação em diversas linguagens de programação:

@@ -1,0 +1,13 @@
+POST /api/consulta HTTP/1.1
+Host: 186.249.34.34
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjb25zdWx0YUBlbnRlcnBsdWcuY29tLmJyIiwiZXhwIjoxNDcwOTM2Njg1fQ.o_8klFgjA2EZSzeyIAczCQU6lRWRJZBtkFcJvidtcVo_abWtS8Xis2Qg4C3aArCIYTyZjr3aPLb4LSd9aqzFFQ
+Cache-Control: no-cache
+
+{
+    "codigoProduto": "332",
+    "tipoConsumidor": "J",
+    "documentoConsumidor": "02117943000124",
+    "cepOrigem": "14401-360",
+    "codigoEstacaoConsultante": "123"
+}

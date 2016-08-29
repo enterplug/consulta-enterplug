@@ -1,0 +1,7 @@
+var client = new RestClient("http://186.249.34.34/api/consulta");
+var request = new RestRequest(Method.POST);
+request.AddHeader("cache-control", "no-cache");
+request.AddHeader("authorization", "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjb25zdWx0YUBlbnRlcnBsdWcuY29tLmJyIiwiZXhwIjoxNDcwOTM2Njg1fQ.o_8klFgjA2EZSzeyIAczCQU6lRWRJZBtkFcJvidtcVo_abWtS8Xis2Qg4C3aArCIYTyZjr3aPLb4LSd9aqzFFQ");
+request.AddHeader("content-type", "application/json");
+request.AddParameter("application/json", "{\n    \"codigoProduto\": \"15\",\n    \"tipoConsumidor\": \"F\",\n    \"documentoConsumidor\": \"11111111111\",\n    \"dataNascimentoRg\": \"1938-01-23T00:00:00\",\n    \"telefoneConsultar\": {\n        \"ddd\": \"11\",\n        \"numero\": \"35496800\"\n    },\n    \"cepConsumidor\": \"04003010\",\n    \"utilizaCMC7\": \"false\",\n    \"bancoChequeInicial\": \"756\",\n    \"agenciaChequeInicial\": \"4084\",\n    \"contaCorrenteChequeInicial\": \"51999\",\n    \"digitoContaCorrenteChequeInicial\": \"2\",\n    \"numeroChequeInicial\": \"1\",\n    \"digitoChequeInicial\": \"9\",\n    \"quantidadeCheque\": \"1\",\n    \"chequeDetalhado\": [\n    {\n        \"numero\": \"1\",\n        \"digito\": \"9\",\n        \"dataDeposito\": \"2016-08-11T00:00:00\",\n        \"valor\": \"100\"\n    }],\n    \"cepOrigem\": \"04003010\",\n    \"codigoEstacaoConsultante\": \"123\"\n}", ParameterType.RequestBody);
+IRestResponse response = client.Execute(request);

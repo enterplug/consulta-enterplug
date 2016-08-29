@@ -5,7 +5,7 @@ $request = new http\Client\Request;
 
 $body = new http\Message\Body;
 $body->append('{
-    "codigoProduto": "15",
+    "codigoProduto": "233",
     "tipoConsumidor": "F",
     "documentoConsumidor": "11111111111",
     "dataNascimentoRg": "1938-01-23T00:00:00",

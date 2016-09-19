@@ -16,6 +16,93 @@
 3. - **[Consulta Cheque Plus(13)]()**
 
 
+## Regras de Uso
+
+O código do produto a ser consultado deve sempre ser enviado. A necessidade/obrigatoriedade
+dos demais parâmetros depende da configuração do produto consultado;
+
+Para a consulta ao produto ser executada com sucesso, o usuário deve possuir acesso ao produto e também deve possuir acesso de consulta ao produto.
+
+Os dados retornados na consulta variam de acordo com o produto consultado; portanto, todos
+os elementos devem ser tratados, pois o resultado da consulta será variável, conforme o
+produto consultado. Os elementos configurados em um produto aparecem no retorno de uma
+consulta, mesmo que não exista a informação para o documento consultado; nesses situações,
+a quantidade do referido é null.
+
+O parâmetro utiliza-CMC7 determina a forma de se informar os cheques para consulta; caso
+seja informado (utiliza-CMC7 = true), os três campos que representam o CMC7 devem ser
+informados; caso seja informado (utiliza-CMC7 = false), os campos
+banco/conta/agencia/numero do cheque inicial devem ser informados; a obrigatoriedade dos
+dados depende da configuração do produto. Entretanto, cada conjunto de parametros (CMC7
+ou banco/conta/agencia/numero do cheque inicial) são validados em conjunto; sendo assim, se
+for informado o banco, por exemplo, será necessário informar os demais parametros
+(conta/agencia/numero do cheque inicial). Na lista de cheques detalhados, os dados de cada
+cheque informado também serão validados em conjunto.
+
+Algumas informações apresentam um item de resumo; este bloco apresenta a quantidade total
+de registros/informações, valor e data da última ocorrência.
+
+Algumas entidades podem obrigar a entrada dos dados de cheques através do CMC7; nesses
+casos, ocorrerá erro quando a consulta for executada informando dados do cheque inicial.
+
+## Tabela de Erros
+Exceções: Código Retorno - Descrição
+00 - Erro interno.
+01 - O produto a ser consultado não existe ou está inativo.
+02 - CEP de origem inválido.
+03 - Código da estação consultante inválido (suporta até 16 caracteres).
+04 - Nenhum parametro informado.
+05 - Documento de consulta é obrigatório.
+06 - Número do CNPJ informado é inválido.
+07 - Número do CPF informado é inválido.
+08 - Tipo de consumidor inválido.
+09 - CEP do consumidor é obrigatório.
+10 - CEP do consumidor inválido.
+11 - Telefone a ser consultado é obrigatório.
+12 - Número do DDD do telefone a ser consultado inválido.
+13 - Número do telefone a ser consultado inválido.
+14 - Produto não possui insumo opcional.
+15 - Insumo opcional informado não existe na configuração do produto.
+16 - Cheque inicial informado – informe se utiliza CMC7 ou dados do cheque.
+17 - Informe o CMC7 ou o número do cheque inicial.
+18 - Dados do cheque inicial (banco/agencia/conta) inválidos.
+19 - Obrigatório informar CMC7.
+20 - inválido.
+21 - Agência inválida.
+22 - Número da conta corrente ou dígito inválido.
+23 - Dígito da conta corrente inválido.
+24 - Número do cheque inicial inválido.
+25 - Dígito do cheque inicial inválido.
+26 - Quantidade de cheques deve ser informada.
+27 - Quantidade de cheques não pode ser maior que 24.
+28 - Produto Chequenet – informar no maximo 12 cheques.
+29 - Quantidade de cheques detalhados diferente da quantidade de cheques informada.
+30 - CMC7 do cheque inicial inválido.
+31 - CMC7 não pode ser zero.
+32 - Numero do cheque detalhado não pode ser menor que o número do cheque inicial.
+33 - Número do cheque detalhado foi informado mais de uma vez.
+34 - Número do cheque detalhado inválido.
+35 - Dígito do cheque detalhado inválido.
+36 - Data de deposito do cheque detalhado deve ser informada.
+37 - Data de deposito do cheque detalhado deve ser futura.
+38 - Valor do cheque detalhado inválido.
+39 - O operador não possui acesso ao produto.
+50 - Base externa inoperante no momento; tente novamente (apenas para produtos que
+acessam exclusivamente informações externas).
+51 - Informações indisponíveis na base externa (apenas para produtos que acessam
+exclusivamente informações externas).
+52 - Acesso apenas para entidades migradas (quando um operador de entidade replicada tenta consultar via web-service de consulta para entidades migradas).
+53 – Obrigatório informar códigos da entidade e associado replicados e o documento
+consultante (para web-service de entidades replicadas, quando uma das informações não é
+enviada).
+54 - Associado replicado informado nao cadastrado (o código do associado replicado passado
+por parâmetro não existe no cadastro do SPC Brasil).
+55 - Documento do consultante informado inválido.
+56 - Documento do consultante informado não corresponde ao cadastro do associado (apenas
+para web-service de entidades replicadas).
+57 - Acesso temporariamente suspenso, por favor entrar em contato com sua entidade. (cod
+670)
+
 ## Autenticação
 
 Para efetuar autenticação na API REST de consulta é obrigatório o desenvolvedor informar o email e password para a geração do token

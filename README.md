@@ -57,49 +57,7 @@ As informações marcadas com * retornam quando são consultados produtos 2 Bure
 | restricao      | Indica se a consulta retornou algum dado que representa restrição
 de crédito para o consumidor consultado.      |
 | base-inoperante | Relação das bases de dados inoperantes no momento da consulta.      |
-| consumidor | Dados do consumidor consultado:
-
-consumidor-pessoa-fisica: retorna quando a consulta foi de um CPF:
-
-cpf;
-nome;
-data-nascimento;
-nome-pai;
-nome-mae;
-sexo;
-estado-civil;
-numero-titulo-eleitor;
-email;
-numero-rg;
-estado-rg;
-signo;
-situacao-cpf;
-idade;
-endereco;
-telefone-residencial;
-telefone-celular;
-telefone-comercial;
-fax.
-
-consumidor-pessoa-juridica: retorna quando a consulta foi de um CNPJ:
-cnpj;
-nome-comercial;
-razao-social;
-data-fundacao;
-inscricao-estadual;
-valor-capital-social;
-numero-NIRE-NIRC;
-razao-social-anterior;
-situacao-cnpj;
-situacao-inscricao-estadual;
-natureza-juridica;
-atividade-economica-principal;
-endereco;
-telefone;
-fax;
-atividade-economica-secundaria.
-
-Os dois elementos nunca retornam ao mesmo tempo.      |
+| consumidor | Dados do consumidor consultado |
 | base-inoperante | Relação das bases de dados inoperantes no momento da consulta.      |
 | base-inoperante | Relação das bases de dados inoperantes no momento da consulta.      |
 | base-inoperante | Relação das bases de dados inoperantes no momento da consulta.      |

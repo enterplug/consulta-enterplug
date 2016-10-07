@@ -45,76 +45,62 @@ de registros/informações, valor e data da última ocorrência.
 Algumas entidades podem obrigar a entrada dos dados de cheques através do CMC7; nesses
 casos, ocorrerá erro quando a consulta for executada informando dados do cheque inicial.
 
-## Retorno
-
-Dados obtidos a partir da execução da consulta.
-
-As informações marcadas com * retornam quando são consultados produtos 2 Bureaux.
-
-| Nome da informação | Descrição das informações e dos seus principais atributos/elementos                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| data               | Data/Hora da consulta.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| restricao          | Indica se a consulta retornou algum dado que representa restrição de crédito para o consumidor consultado.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| base-inoperante    | Relação das bases de dados inoperantes no momento da consulta.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| consumidor         | Dados do consumidor consultado: consumidor-pessoa-fisica: retorna quando a consulta foi de um CPF:  cpf; nome;  data-nascimento;  nome-pai; nome-mae;  sexo;  estado-civil;  numero-titulo-eleitor;  email;  numero-rg;  estado-rg;  signo;  situacao-cpf;  idade;  endereco;  telefone-residencial;  telefone-celular; telefone-comercial;  fax;  consumidor-pessoa-juridica: retorna quando a consulta foi de um CNPJ:   cnpj;  nome-comercial;  razao-social;  data-fundacao; inscricao-estadual;  valor-capital-social; numero-NIRE-NIRC;  razao-social-anterior;  situacao-cnpj;  situacao-inscricao-estadual;  natureza-juridica;  atividade-economica-principal;  endereco; telefone; fax;  atividade-economica-secundaria.  Os dois elementos nunca retornam ao mesmo tempo. |
-
-
 ## Tabela de Erros
 Exceções: Código Retorno - Descrição
-00 - Erro interno.
-01 - O produto a ser consultado não existe ou está inativo.
-02 - CEP de origem inválido.
-03 - Código da estação consultante inválido (suporta até 16 caracteres).
-04 - Nenhum parametro informado.
-05 - Documento de consulta é obrigatório.
-06 - Número do CNPJ informado é inválido.
-07 - Número do CPF informado é inválido.
-08 - Tipo de consumidor inválido.
-09 - CEP do consumidor é obrigatório.
-10 - CEP do consumidor inválido.
-11 - Telefone a ser consultado é obrigatório.
-12 - Número do DDD do telefone a ser consultado inválido.
-13 - Número do telefone a ser consultado inválido.
-14 - Produto não possui insumo opcional.
-15 - Insumo opcional informado não existe na configuração do produto.
-16 - Cheque inicial informado – informe se utiliza CMC7 ou dados do cheque.
-17 - Informe o CMC7 ou o número do cheque inicial.
-18 - Dados do cheque inicial (banco/agencia/conta) inválidos.
-19 - Obrigatório informar CMC7.
-20 - inválido.
-21 - Agência inválida.
-22 - Número da conta corrente ou dígito inválido.
-23 - Dígito da conta corrente inválido.
-24 - Número do cheque inicial inválido.
-25 - Dígito do cheque inicial inválido.
-26 - Quantidade de cheques deve ser informada.
-27 - Quantidade de cheques não pode ser maior que 24.
-28 - Produto Chequenet – informar no maximo 12 cheques.
-29 - Quantidade de cheques detalhados diferente da quantidade de cheques informada.
-30 - CMC7 do cheque inicial inválido.
-31 - CMC7 não pode ser zero.
-32 - Numero do cheque detalhado não pode ser menor que o número do cheque inicial.
-33 - Número do cheque detalhado foi informado mais de uma vez.
-34 - Número do cheque detalhado inválido.
-35 - Dígito do cheque detalhado inválido.
-36 - Data de deposito do cheque detalhado deve ser informada.
-37 - Data de deposito do cheque detalhado deve ser futura.
-38 - Valor do cheque detalhado inválido.
-39 - O operador não possui acesso ao produto.
-50 - Base externa inoperante no momento; tente novamente (apenas para produtos que
+00. - Erro interno.
+01. - O produto a ser consultado não existe ou está inativo.
+02. - CEP de origem inválido.
+03. - Código da estação consultante inválido (suporta até 16 caracteres).
+04. - Nenhum parametro informado.
+05. - Documento de consulta é obrigatório.
+06. - Número do CNPJ informado é inválido.
+07. - Número do CPF informado é inválido.
+08. - Tipo de consumidor inválido.
+09. - CEP do consumidor é obrigatório.
+10. - CEP do consumidor inválido.
+11. - Telefone a ser consultado é obrigatório.
+12. - Número do DDD do telefone a ser consultado inválido.
+13. - Número do telefone a ser consultado inválido.
+14. - Produto não possui insumo opcional.
+15. - Insumo opcional informado não existe na configuração do produto.
+16. - Cheque inicial informado – informe se utiliza CMC7 ou dados do cheque.
+17. - Informe o CMC7 ou o número do cheque inicial.
+18. - Dados do cheque inicial (banco/agencia/conta) inválidos.
+19. - Obrigatório informar CMC7.
+20. - inválido.
+21. - Agência inválida.
+22. - Número da conta corrente ou dígito inválido.
+23. - Dígito da conta corrente inválido.
+24. - Número do cheque inicial inválido.
+25. - Dígito do cheque inicial inválido.
+26. - Quantidade de cheques deve ser informada.
+27. - Quantidade de cheques não pode ser maior que 24.
+28. - Produto Chequenet – informar no maximo 12 cheques.
+29. - Quantidade de cheques detalhados diferente da quantidade de cheques informada.
+30. - CMC7 do cheque inicial inválido.
+31. - CMC7 não pode ser zero.
+32. - Numero do cheque detalhado não pode ser menor que o número do cheque inicial.
+33. - Número do cheque detalhado foi informado mais de uma vez.
+34. - Número do cheque detalhado inválido.
+35. - Dígito do cheque detalhado inválido.
+36. - Data de deposito do cheque detalhado deve ser informada.
+37. - Data de deposito do cheque detalhado deve ser futura.
+38. - Valor do cheque detalhado inválido.
+39. - O operador não possui acesso ao produto.
+50. - Base externa inoperante no momento; tente novamente (apenas para produtos que
 acessam exclusivamente informações externas).
-51 - Informações indisponíveis na base externa (apenas para produtos que acessam
+51. - Informações indisponíveis na base externa (apenas para produtos que acessam
 exclusivamente informações externas).
-52 - Acesso apenas para entidades migradas (quando um operador de entidade replicada tenta consultar via web-service de consulta para entidades migradas).
-53 – Obrigatório informar códigos da entidade e associado replicados e o documento
+52. - Acesso apenas para entidades migradas (quando um operador de entidade replicada tenta consultar via web-service de consulta para entidades migradas).
+53. – Obrigatório informar códigos da entidade e associado replicados e o documento
 consultante (para web-service de entidades replicadas, quando uma das informações não é
 enviada).
-54 - Associado replicado informado nao cadastrado (o código do associado replicado passado
+54. - Associado replicado informado nao cadastrado (o código do associado replicado passado
 por parâmetro não existe no cadastro do SPC Brasil).
-55 - Documento do consultante informado inválido.
-56 - Documento do consultante informado não corresponde ao cadastro do associado (apenas
+55. - Documento do consultante informado inválido.
+56. - Documento do consultante informado não corresponde ao cadastro do associado (apenas
 para web-service de entidades replicadas).
-57 - Acesso temporariamente suspenso, por favor entrar em contato com sua entidade. (cod
+57. - Acesso temporariamente suspenso, por favor entrar em contato com sua entidade. (cod
 670)
 
 ## Autenticação

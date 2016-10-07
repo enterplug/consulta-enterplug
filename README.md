@@ -45,11 +45,17 @@ de registros/informações, valor e data da última ocorrência.
 Algumas entidades podem obrigar a entrada dos dados de cheques através do CMC7; nesses
 casos, ocorrerá erro quando a consulta for executada informando dados do cheque inicial.
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+## Retorno
+
+Dados obtidos a partir da execução da consulta.
+
+As informações marcadas com * retornam quando são consultados produtos 2 Bureaux.
+
+| Nome da informação        | Descrição das informações e dos seus principais atributos/elementos           |
+| ------------- |:-------------:|
+| col 3 is      | right-aligned |
+| col 2 is      | centered      |
+| zebra stripes | are neat      |
 
 ## Tabela de Erros
 Exceções: Código Retorno - Descrição
